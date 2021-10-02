@@ -1,0 +1,79 @@
+site_name: ZPSJLU
+nav:
+    - Home:
+        - start: welcome.md
+    - 经验之谈: 
+        - 专栏介绍: 经验之谈\README.md
+        - 蛋白质荧光阵列矫正与计数: 经验之谈\荧光阵列矫正计数.md
+        - 百度车载影像检测与分割: 经验之谈\百度大数据竞赛划水记录.md
+        - 吉林大学教务管理系统验证码识别: 经验之谈\JLU Captcha.md
+    - 碎碎念:
+        - 专栏介绍: 碎碎念\README.md
+        - 暑假留校摸鱼: 碎碎念\暑假摸鱼.md
+        - Daily Record: 碎碎念\Daily Learning.md
+    - 论文笔记:
+        - 专栏介绍: 论文笔记\README.md
+        - 网络解读:
+            - 屠榜的transformer: 论文笔记\Transformer.md
+            - 吊打一切的yoloX: 论文笔记\吊打一切的yolox.md
+            - 高分辨网络HR-Net: 论文笔记\HR-Net 论文解读.md
+            - 小目标检测王者TPH-YOLOV5: 论文笔记\小目标封神TPH-YOLOV5.md
+            - 嵌入式同时完成三大视觉任务YOLOP: 论文笔记\YOLOP.md
+        - 理论基础:
+            - 从标签平滑和知识蒸馏看Soft Label: 论文笔记\基础理解\Soft label.md
+        - 即插即用:
+            - 百度开源UMOP解决特征层gt不匹配: 论文笔记\即插即用\UMOP.md
+    - 踩坑记录:
+        - 专栏介绍: 踩坑记录\README.md
+        - nano部署yolov5: 踩坑记录\nano部署yolov5.md
+        - windows下配置libtorch(vs/cmake): 踩坑记录\LibtorchInWindows.md
+    - Rule for ZPS:
+        - Rule918: Rule\Rule.md
+# Theme
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    primary: 'Blue Grey'
+    accent: 'red'
+    scheme: Slate
+    #scheme: preference
+    
+  icon:
+    logo: 'material/school'
+  features:
+    - navigation.tabs
+  font:
+    text: 'Noto Sans'
+    code: 'Source Code Pro'
+
+# Extensions
+markdown_extensions:
+    - admonition
+    - codehilite:
+        guess_lang: false
+    - def_list
+    - footnotes
+    - meta
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+
+extra_javascript:
+  # other extra java script
+  # - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
